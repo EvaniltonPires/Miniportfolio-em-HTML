@@ -1,0 +1,170 @@
+/* Reset simples - remove espaçamentos e bordas padrões do navegador */
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;                /* Remove margens externas */
+    padding: 0;               /* Remove espaçamento interno */
+    box-sizing: border-box;   /* Inclui borda e padding no cálculo do tamanho */
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
+    line-height: 1.6;         /* Altura das linhas, melhora a leitura */
+    background-color: #f4f4f9; /* Cor de fundo clara */
+    color: #333;              /* Cor do texto (cinza escuro) */
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho (header) */
+header {
+    background-color: #004d99; /* Fundo azul escuro */
+    color: white;              /* Texto branco */
+    padding: 20px;             /* Espaçamento interno */
+    text-align: center;        /* Centraliza título e menu */
+}
+
+header h1 {
+    margin-bottom: 10px;       /* Espaço abaixo do título */
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;          /* Remove bolinhas da lista */
+}
+
+nav ul li {
+    display: inline;           /* Coloca os itens lado a lado */
+    margin: 0 15px;            /* Espaço entre os links */
+}
+
+/* Links do menu */
+nav a {
+    color: white;              /* Cor branca para os links */
+    text-decoration: none;     /* Remove o sublinhado */
+    font-weight: bold;         /* Negrito */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Sublinha quando passa o mouse */
+}
+
+/* Rodapé (footer) */
+footer {
+    background-color: #004d99; /* Fundo azul escuro */
+    color: white;              /* Texto branco */
+    text-align: center;        /* Centralizado */
+    padding: 10px;             /* Espaçamento interno */
+    margin-top: 30px;          /* Espaço antes do rodapé */
+}
+
+/* Links comuns (fora do menu) */
+a {
+    background-color: #004d99;  /* fundo azul como no menu */
+    color: white;               /* texto branco */
+    text-decoration: none;      /* sem sublinhado */
+    font-weight: bold;
+    padding: 5px 10px;          /* dá “corpo” para parecer botão/tarja */
+    border-radius: 5px;         /* cantos arredondados */
+    margin: 5px;                /* espaçamento entre os links */
+    display: inline-block;      /* garante que padding funcione bem */
+}
+
+a:hover {
+    background-color: #003366;  /* azul mais escuro no hover */
+    text-decoration: underline; /* sublinha ao passar o mouse */
+}
+
+
+/* Área principal do conteúdo */
+main {
+    padding: 20px;             /* Espaço interno */
+    max-width: 800px;          /* Largura máxima para não ficar muito largo */
+    margin: auto;              /* Centraliza o conteúdo */
+}
+
+/* Centralizar textos apenas no index.html e sobre.html */
+body.index main,
+body.sobre main {
+    text-align: center;
+}
+/* Centralização usada na página projetos (outros títulos) */
+.titulo-centralizado {
+    text-align: center;
+}
+
+/* Centraliza apenas o último título da imagem do projeto */
+.titulo-imagem-centralizado {
+    text-align: center;
+}
+/* Imagens */
+img {
+    display: block;            /* Ocupa uma linha inteira */
+    margin: 20px auto;         /* Centraliza a imagem */
+    border-radius: 10px;       /* Bordas arredondadas */
+}
+
+/* Tabela */
+table {
+    width: 100%;               /* Ocupa toda a largura */
+    border-collapse: collapse; /* Remove espaçamento entre bordas */
+    margin-top: 15px;          /* Espaço acima da tabela */
+}
+
+table, th, td {
+    border: 1px solid #999;    /* Bordas cinza */
+}
+
+/* Cabeçalho da tabela */
+th {
+    background-color: #004d99; /* Fundo azul */
+    color: white;              /* Texto branco */
+    padding: 10px;             /* Espaçamento interno */
+}
+
+/* Células da tabela */
+td {
+    padding: 8px;              /* Espaçamento interno */
+    text-align: center;        /* Centraliza o conteúdo */
+}
+
+/* Formulário */
+form {
+    background: #fff;          /* Fundo branco */
+    padding: 15px;             /* Espaçamento interno */
+    border-radius: 8px;        /* Bordas arredondadas */
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2); /* Sombra leve */
+    max-width: 400px;          /* Largura máxima */
+    margin: auto;              /* Centraliza o formulário */
+}
+
+form label {
+    font-weight: bold;         /* Rótulos em negrito */
+}
+
+/* Campos de entrada e botão */
+form input, form textarea, form button {
+    width: 100%;               /* Ocupam toda a largura */
+    margin-top: 8px;           /* Espaço acima */
+    margin-bottom: 15px;       /* Espaço abaixo */
+    padding: 8px;              /* Espaço interno */
+    border: 1px solid #999;    /* Borda cinza */
+    border-radius: 5px;        /* Bordas arredondadas */
+}
+
+/* Botão do formulário */
+form button {
+    background-color: #004d99; /* Fundo azul */
+    color: white;              /* Texto branco */
+    font-weight: bold;         /* Negrito */
+    cursor: pointer;           /* Mostra a mãozinha ao passar o mouse */
+}
+
+form button:hover {
+    background-color: #003366; /* Azul ainda mais escuro no hover */
+}
+
+/* Centraliza os links do rodapé */
+.links-rodape {
+    text-align: center;
+    margin-top: 15px;
+}
